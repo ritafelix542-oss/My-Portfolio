@@ -1,4 +1,5 @@
-
 @import "tailwindcss";
  
- 
+ .project-card:hover .project-buttons {
+  opacity: 1 !important;
+}

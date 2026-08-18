@@ -1,6 +1,7 @@
  import { useEffect, useRef } from 'react'
 import { FaLaptopCode } from 'react-icons/fa'
 
+
 const About = () => {
   const statsRef = useRef(null)
 
@@ -37,10 +38,11 @@ const About = () => {
 
   return (
     <section id="about" style={{ position: 'relative', zIndex: 1 }}>
-      <div className="section-header reveal">
-        <span className="section-tag">About Me</span>
-        <h2>
-          Passionate about <span  style={{ color: '#ffdd4d' }}>clean code</span> & design
+      <div className="section-header reveal text-center text-4xl">
+        <span className="section-tag text-amber-300  p-b-4 "><h3>About Me</h3></span>
+        <h2
+           className='text-amber-400 text-2xl pt-4'>
+          Passionate about <span  style={{ color: '#ffdd4d' }} className=''>clean code</span> & design
         </h2>
         <p className='font-bold'>A frontend developer who loves turning ideas into reality through code.</p>
       </div>
@@ -82,7 +84,7 @@ const About = () => {
                 position: 'relative',
               }}
             >
-              <FaLaptopCode />
+              <img src="/myPics.jpeg" alt="" />
             </div>
           </div>
 
@@ -163,7 +165,7 @@ const About = () => {
           <p style={{ color: 'rgba(255, 221, 77, 0.65)', marginBottom: '1.5rem', fontSize: '1.05rem' }}>
             When I'm not coding, I love exploring Nigerian cuisine — my Afang Soup recipe site is proof of that!
           </p>
-          <button className="btn btn-primary" onClick={() => {
+          <button className="btn btn-primary text-amber-400" onClick={() => {
             document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
           }}>
             Let's Work Together

@@ -38,7 +38,7 @@ const Contact = () => {
           }}
         >
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem' }}>
-            <FormGroup label="Your Name" type="text" id="name" />
+            <FormGroup label="Your name" type="text" id="name" />
             <FormGroup label="Your Email" type="email" id="email" />
           </div>
           <FormGroup label="Subject" type="text" id="subject" />
